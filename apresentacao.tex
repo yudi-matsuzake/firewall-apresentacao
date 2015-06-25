@@ -35,6 +35,7 @@
 \usepackage{hyphenat}
 \hyphenation{mate-mática recu-perar}
 %--------------------------------------
+\bibliographystyle{plain}
 
 % The Beamer class comes with a number of default slide themes
 % which change the colors and layouts of slides. Below this is a list
@@ -106,8 +107,10 @@
 \institute[UTFPR] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Universidade Tecnológica Federal do Paraná\\ % Your institution for the title page
+Profº Fabiano Scriptore de Carvalho
 \medskip
 \textit{yudi.matsuzake@gmail.com} % Your email address
+\url{https://github.com/yudi-matsuzake/firewall-apresentacao}
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -127,16 +130,14 @@ Universidade Tecnológica Federal do Paraná\\ % Your institution for the title 
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Introdução} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\subsection{O que é?} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+\frametitle{Denifição}
+Em computação, um firewall é um sistema de segurança de redes de computadores. 
 \end{frame}
 
 %------------------------------------------------
@@ -233,7 +234,7 @@ $E = mc^2$
 \end{example}
 \end{frame}
 
-%------------------------------------------------
+%----------------------------------------------
 
 \begin{frame}
 \frametitle{Figure}
@@ -256,19 +257,24 @@ This statement requires citation \cite{p1}.
 
 \begin{frame}
 \frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
+%\footnotesize{
+%\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+%\bibitem[Smith, 2012]{p1} John Smith (2012)
+%\newblock Title of the publication
+%\newblock \emph{Journal Name} 12(3), 45 -- 678.
+%\end{thebibliography}
+%}
+\bibliography{apresentacao}
 \end{frame}
 
 %------------------------------------------------
 
+\section{FIM}
 \begin{frame}
-\Huge{\centerline{The End}}
+\frametitle{Acabou :(}
+\centerline{Dúvidas?}
+
+\titlepage
 \end{frame}
 
 %----------------------------------------------------------------------------------------
