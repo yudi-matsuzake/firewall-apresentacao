@@ -16,26 +16,81 @@
 
 %------------------------------------------------
 
+\newcommand{\ondefire}[3]{
+	\begin{frame}
+		\frametitle{#1}
+		\begin{figure}
+			\centering
+			\includegraphics[height=.5\textheight]{imagens/#3}
+			\caption{#2}
+		\end{figure}
+	\end{frame}
+}
+
 \subsection{Onde posso encontrar firewalls?}
+
 \begin{frame}
-	%NETGATE
-	\begin{figure}
-		\centering
-		\includegraphics[height=0.3\textheight]{imagens/netgate.jpg}
-		\caption{Netgate}
-	\end{figure}
-	
-	%DELL
-	\begin{figure}
-		\centering
-		\includegraphics[height=0.3\textheight]{imagens/dell.png}
-		\caption{Dell}
-	\end{figure}
+
+	\frametitle{É, onde eu posso encontrar esses firewall?}
+
+	\begin{block}{A pergunta que você deve fazer ao sistema que você desconfia ser um firewall é:}
+
+	"Você faz alguma coisa pra proteger meu sistema de ~coisas~ externas?"
+
+	\end{block}
+
+
+	\textbf{Se a coisa responder "sim", então ele é um firewall!}
 
 \end{frame}
+
+\begin{frame}
+
+	\frametitle{Tudo que protege seu sistema de ameaças externas!}
+	
+	Você não acredita, né? Então toma uns exemplos:
+
+	\begin{itemize}
+		\item{Dispositivos de firewall}
+		\item{Software desses dispositivos de firewall}
+		\item{Programas do seu sistema operacional}
+		\item{Firmware ou Sistema operacional do seu roteador/switch}
+		\item{O muro do local físico do servido (por essa você não esperava, né?)}
+		\item{O Zé, o segurança que cuida do prédio onde está localizado o seu seu servidor}
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Software}
+
+%ACL
+\ondefire{Software}{Access Control List}{acl.png}
+
+%IP TABLES
+\ondefire{Software}{iptables}{iptables.jpg}
+
+%ufw Uncomplicated Firewall
+\ondefire{Software}{UFW - Uncomplicated Firewall}{ufw.png}
+
+%do_windows
+\ondefire{Software}{Firewall do Windows}{dowindows.jpg}
+
+\subsubsection{Hardware}
+
+%NETGATE
+\ondefire{Hardware}{Netgate}{netgate.jpg}
+
+%DELL
+\ondefire{Hardware}{Dell}{dell.png}
+
+%Barracuda
+\ondefire{Hardware}{Barracuda}{barracuda.jpg}
+
+%Asa
+\ondefire{Hardware}{Asa}{asa.jpg}
+
 
 %------------------------------------------------
 
 \subsection{Analogia do castelo}
-
 
