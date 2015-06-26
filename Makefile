@@ -11,5 +11,7 @@ pdf:	${arq}.tex ${arq}.bib
 clean:
 	@rm -f ${arq}.aux ${arq}.bbl ${arq}.blg ${arq}.dvi ${arq}.log ${arq}.nav ${arq}.out ${arq}.snm ${arq}.toc ${arq}.vrb
 
-and see: all
-	xdg-open apresentacao.pdf &
+see: ${arq}.pdf
+	xdg-open ${arq}.pdf
+
+and see: all see
